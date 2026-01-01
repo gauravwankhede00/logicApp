@@ -1,0 +1,21 @@
+<p>variables</p>
+<table class="table"></table>
+<div class="col3">
+    Task 1 : <h5> {{ firstName | uppercase}} {{middleName | lowercase}} {{lastName}}.</h5>
+</div>
+<div class="col-3">
+    Task 2 : {{date}}
+</div>
+<div class="col-3">
+    Task 3:
+    Price : <input type="text" name="price" [(ngModel)]="price" /> <br>
+    Quantity : <input type="text" name="quantity" [(ngModel)]="quantity" /> <br>
+    Discount : <input type="text" id="discount" name="discount" (keyup)="calculateFinalPrice()"
+        [(ngModel)]="discount" /> <br>
+
+    Final Price : {{finalPrice}}
+</div>
+<div class="col-3">
+    
+
+</div>

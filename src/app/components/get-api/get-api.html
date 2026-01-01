@@ -1,0 +1,19 @@
+<p>get-api works!</p>
+<ul>
+    @for (item of photoData(); track $index) {
+    <li>{{item.id}} {{item.title}}</li>
+    }
+</ul>
+<h2>Vendor</h2>
+<ul>
+    @for (item of vendorData(); track $index) {
+    <li>{{item.vendorName}} {{item.contactNo}}</li>
+    }
+</ul>
+
+<h2>Client</h2>
+<ul>
+    @for (item of clientData(); track $index) {
+    <li>{{item.clientName}} {{item.businessName}}</li>
+    }
+</ul>

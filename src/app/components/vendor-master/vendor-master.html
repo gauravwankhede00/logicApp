@@ -1,0 +1,21 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th> Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of clients(); track $index) {
+        <tr>
+            <td>{{$index+1}}</td>
+            <td>{{item.vendorName}}</td>
+            <td><button>AAA</button></td>
+        </tr>
+        }
+
+
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+<p>for works!</p>
+
+<ul>
+    <li *ngFor="let city of cities()">
+        {{city}}
+         <!-- <input type="text"  [ngModel]="city"> -->
+    </li>
+</ul>
+<ul>
+    
+    @for(city of cities();track city; let first = $first; let last =$last; let index = $index ){
+    <li>{{city}} --{{first}}  -- {{last}} --{{index + 1}} 
+
+        
+    </li>
+    <input type="text"  [ngModel]="city"/>
+    }
+   
+</ul>
+<br><br>

@@ -1,0 +1,8 @@
+<p>signal works!</p>
+<ul>
+    @for (item of city(); track $index) {
+    <li>{{item}}</li>
+    }
+</ul>
+{{fruits | json}}
+<button (click)="updateCity()">Update Signal</button>
